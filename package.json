@@ -52,7 +52,7 @@
     "start:production": "env-cmd -f .env.production npm run start",
     "build:dev": "env-cmd -f .env.development npm run build",
     "build:production": "env-cmd -f .env.production npm run build",
-    "build": "node generate-meta && react-scripts build",
+     "build": "CI= npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
